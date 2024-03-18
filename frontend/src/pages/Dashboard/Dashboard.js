@@ -13,7 +13,6 @@ export default function Dashboard() {
           .filter(item => user.isAdmin || !item.forAdmin)
           .map(item => (
             <Link
-              key={item.title}
               to={item.url}
               style={{
                 backgroundColor: item.bgColor,
@@ -48,7 +47,7 @@ const allItems = [
     title: 'Users',
     imageUrl: '/icons/users.svg',
     url: '/admin/users',
-    forAdmin: true,
+    forAdmin: false,
     bgColor: '#00bfa5',
     color: 'white',
   },
@@ -56,7 +55,7 @@ const allItems = [
     title: 'Foods',
     imageUrl: '/icons/foods.svg',
     url: '/admin/foods',
-    forAdmin: true,
+    forAdmin: false,
     bgColor: '#e040fb',
     color: 'white',
   },
