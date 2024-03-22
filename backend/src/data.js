@@ -81,18 +81,18 @@ export const sample_tags = [
 export const sample_users = [
   {
     id: 1,
-    name: 'John Doe',
-    email: 'john@gmail.com',
+    name: 'Diego Marinangeli',
+    email: 'marinangelidiego@gmail.com',
     password: '12345',
-    address: 'Toronto On',
-    isAdmin: false,
+    address: 'cecchino vanni',
+    isAdmin: true,
   },
   {
     id: 2,
-    name: 'Jane Doe',
-    email: 'jane@gmail.com',
+    name: 'Mattia Marinangeli',
+    email: 'mattia928@gmail.com',
     password: '12345',
-    address: 'Shanghai',
-    isAdmin: true,
+    address: 'cecchino vanni',
+    isAdmin: false,
   },
 ];

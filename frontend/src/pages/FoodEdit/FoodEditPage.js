@@ -59,11 +59,7 @@ export default function FoodEditPage() {
     <div className={classes.container}>
       <div className={classes.content}>
         <Title title={isEditMode ? 'Edit Food' : 'Add Food'} />
-        <form
-          className={classes.form}
-          onSubmit={handleSubmit(submit)}
-          noValidate
-        >
+        <form onSubmit={handleSubmit(submit)} noValidate>
           <InputContainer label="Select Image">
             <input type="file" onChange={upload} accept="image/jpeg" />
           </InputContainer>
