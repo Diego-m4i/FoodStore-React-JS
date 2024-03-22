@@ -4,7 +4,7 @@ export const sendEmailReceipt = function (order) {
   const mailClient = getClient();
 
   mailClient.messages
-    .create('sandbox80bf0ab584cb42dbbf5cf0e9a249e188.mailgun.org', {
+    .create('sandboxa4bef970ad5e4ccbbb5aa8e75c471d0f.mailgun.org', {
       from: 'orders@foodmine.com',
       to: order.user.email,
       subject: `Order ${order.id} is being processed`,
